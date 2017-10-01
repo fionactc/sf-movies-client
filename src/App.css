@@ -1,0 +1,114 @@
+html, body, #root {
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.app > div {
+  height: 100%;
+}
+
+.control {
+  -webkit-box-shadow: 2px 0px 3px 1px rgba(161,159,161,0.87);
+  -moz-box-shadow: 2px 0px 3px 1px rgba(161,159,161,0.87);
+  box-shadow: 1px 0px 3px 1px rgba(161,159,161,0.87);
+  z-index: 1;
+  position: absolute;
+  background: white;
+  width: 350px;
+  padding: 20px;
+}
+
+.search-input {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 1.2em;
+  color: gray;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.search-item {
+  width: 100%;
+  height: 45px;
+  font-size: 1.2em;
+  color: gray;
+  padding: 10px;
+  font-weight: 100;
+
+}
+
+.result {
+  margin-top: 30px;
+  color: gray;
+  font-weight: 100;
+}
+
+.result-movie {
+  color: black;
+  text-align: center;
+}
+
+.result-caption {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.map {
+  padding: 0;
+  margin-left: 350px;
+}
+
+/* marker */
+.marker {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 5px solid orangered;
+  border-radius: 40px;
+  background: white;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.marker-details {
+    width: 230px;
+    background-color: #444866;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -130%;
+    margin-left: -60px;
+}
+
+.marker-details::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #444866 transparent transparent transparent;
+}
+
+.marker-details p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 100;
+  text-align: justify;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "sf-movies-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "google-map-react": "^0.24.0",
+    "react": "^16.0.0",
+    "react-autocomplete": "^1.7.1",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-promise": "^0.5.3"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
