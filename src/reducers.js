@@ -9,7 +9,6 @@ export default function(state={ titles: [] }, action) {
         })
       }
       return state;
-      break;
 
     case FETCH_MOVIE:
       if (action.payload.status === 200) {
@@ -17,7 +16,7 @@ export default function(state={ titles: [] }, action) {
           locations: action.payload.data
         })
       }
-      break;
+      return state;
 
     default:
       return state

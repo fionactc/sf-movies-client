@@ -124,7 +124,10 @@ class App extends Component {
         </div>
         <div className="map">
           <GoogleMap
-            id="hello"
+            bootstrapURLKeys={{ 
+              key: process.env.REACT_APP_MAP_KEY,  
+              language: 'en'
+            }}
             center={center}
             zoom={this.state.zoom}
           >
