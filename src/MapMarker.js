@@ -4,11 +4,12 @@ class MapMarker extends Component {
   render() {
     return (
       <div className="marker">
-        <div className="marker-details">
-          <h4>Pier 50- end of the pier</h4>
-          <p>Established in 1867, Buena Vista Park is the oldest official park in San Francisco</p>
+        <div className={this.props.$hover ? 'marker-details visible' : 'marker-details'}>
+          <h4>{this.props.item.locations}</h4>
+          <p>{this.props.item.fun_facts}</p>
         </div>
         {this.props.text}
+        {this.props.$hover}
       </div>
     )
   }

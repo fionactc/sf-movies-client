@@ -21,6 +21,7 @@ html, body, #root {
   background: white;
   width: 350px;
   padding: 20px;
+  overflow: scroll;
 }
 
 .search-input {
@@ -40,7 +41,6 @@ html, body, #root {
   color: gray;
   padding: 10px;
   font-weight: 100;
-
 }
 
 .result {
@@ -80,30 +80,31 @@ html, body, #root {
 }
 
 .marker-details {
-    width: 230px;
-    background-color: #444866;
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: -130%;
-    margin-left: -60px;
+  width: 300px;
+  background-color: #444866;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: -250%;
+  margin-left: -60px;
+  visibility: hidden;
 }
 
 .marker-details::after {
-    content: " ";
-    position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #444866 transparent transparent transparent;
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #444866 transparent transparent transparent;
 }
 
 .marker-details p {
@@ -111,4 +112,8 @@ html, body, #root {
   line-height: 20px;
   font-weight: 100;
   text-align: justify;
+}
+
+.visible {
+  visibility: visible;
 }
