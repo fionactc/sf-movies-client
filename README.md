@@ -1,4 +1,4 @@
-## Aftership Code Challenge - Movies in San Francisco (Client)
+## Aftership Code Challenge Backend track - Movies in San Francisco (Client)
 This is a web application that let users search and see where movies have been filmed in San Francisco. This is the client side code repo.
 
 Live Demo: [HERE](https://evening-ocean-41110.herokuapp.com/)
@@ -6,7 +6,7 @@ Live Demo: [HERE](https://evening-ocean-41110.herokuapp.com/)
 Server Side Repo: [HERE](https://github.com/fionactc/sf-movies-server)
 
 ### Technical Choices
-- ReactJS: for frontend view
+- ReactJS: for frontend view. I have around 3 months experience on React.
 - Redux-React: separate state and controller logic
 - Google Map React: Map react component
 
